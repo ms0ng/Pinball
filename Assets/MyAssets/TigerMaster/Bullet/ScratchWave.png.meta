@@ -1,0 +1,497 @@
+fileFormatVersion: 2
+guid: 62f48378c3fd7254492cc3c6d1331552
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5098014183343373567
+    second: ScratchWave_11
+  - first:
+      213: -1397232365805607759
+    second: ScratchWave_12
+  - first:
+      213: 8068056628808284064
+    second: ScratchWave_13
+  - first:
+      213: 6533414036596812943
+    second: ScratchWave_14
+  - first:
+      213: -9208685463429877557
+    second: ScratchWave_0
+  - first:
+      213: -225240926522982608
+    second: ScratchWave_1
+  - first:
+      213: -6689234070465962195
+    second: ScratchWave_2
+  - first:
+      213: -4833506338653629971
+    second: ScratchWave_3
+  - first:
+      213: -8913796176021054632
+    second: ScratchWave_4
+  - first:
+      213: 2074863245034997271
+    second: ScratchWave_5
+  - first:
+      213: 4605997898113269429
+    second: ScratchWave_6
+  - first:
+      213: 1052580478796643835
+    second: ScratchWave_7
+  - first:
+      213: -5232073683738117116
+    second: ScratchWave_8
+  - first:
+      213: 1475945401766747948
+    second: ScratchWave_9
+  - first:
+      213: 4277015586826416257
+    second: ScratchWave_10
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ScratchWave_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 359
+        width: 131
+        height: 29
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc075f75c5d243080800000000000000
+      internalID: -9208685463429877557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 310
+        width: 131
+        height: 30
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fb7b91298cfdcf0800000000000000
+      internalID: -225240926522982608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 259
+        width: 131
+        height: 32
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f9f62dd011b23a0800000000000000
+      internalID: -6689234070465962195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 209
+        width: 123
+        height: 31
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de193f0189febecb0800000000000000
+      internalID: -4833506338653629971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 164
+        width: 135
+        height: 25
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b9700fa95db4480800000000000000
+      internalID: -8913796176021054632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 123
+        width: 124
+        height: 21
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71643d5d0256bcc10800000000000000
+      internalID: 2074863245034997271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 84
+        width: 122
+        height: 20
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bebc394faacbef30800000000000000
+      internalID: 4605997898113269429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 56
+        width: 26
+        height: 20
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd3f206e548b9e00800000000000000
+      internalID: 1052580478796643835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 56
+        width: 26
+        height: 23
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cbe1294b0f367b0800000000000000
+      internalID: -5232073683738117116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 21
+        height: 20
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f9d24e58c9b7410800000000000000
+      internalID: 1475945401766747948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 37
+        width: 57
+        height: 15
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180f89ff3030b5b30800000000000000
+      internalID: 4277015586826416257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 26
+        width: 20
+        height: 7
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcb51aa3e8cfb640800000000000000
+      internalID: 5098014183343373567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 14
+        width: 13
+        height: 8
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b46a7fe0980c9ce0800000000000000
+      internalID: -1397232365805607759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3
+        width: 12
+        height: 7
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a77adbe1ce77ff60800000000000000
+      internalID: 8068056628808284064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScratchWave_14
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3
+        width: 4
+        height: 5
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c67e563795baa50800000000000000
+      internalID: 6533414036596812943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ScratchWave_9: 1475945401766747948
+      ScratchWave_13: 8068056628808284064
+      ScratchWave_1: -225240926522982608
+      ScratchWave_7: 1052580478796643835
+      ScratchWave_3: -4833506338653629971
+      ScratchWave_14: 6533414036596812943
+      ScratchWave_2: -6689234070465962195
+      ScratchWave_6: 4605997898113269429
+      ScratchWave_12: -1397232365805607759
+      ScratchWave_0: -9208685463429877557
+      ScratchWave_5: 2074863245034997271
+      ScratchWave_10: 4277015586826416257
+      ScratchWave_8: -5232073683738117116
+      ScratchWave_4: -8913796176021054632
+      ScratchWave_11: 5098014183343373567
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

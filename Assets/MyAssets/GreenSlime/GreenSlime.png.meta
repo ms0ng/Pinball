@@ -1,0 +1,750 @@
+fileFormatVersion: 2
+guid: 0de9b7547d2361345ad45370b05da3bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7499619221918500907
+    second: GreenSlime_land_5
+  - first:
+      213: -590448118287248900
+    second: GreenSlime_land_4
+  - first:
+      213: 8402196371350135343
+    second: GreenSlime_land_3
+  - first:
+      213: -6812403811761475244
+    second: GreenSlime_land_2
+  - first:
+      213: 8798678231922511503
+    second: GreenSlime_land_1
+  - first:
+      213: 2616870070719580940
+    second: GreenSlime_5
+  - first:
+      213: -4791060987507776712
+    second: GreenSlime_6
+  - first:
+      213: -8603172019406737018
+    second: GreenSlime_7
+  - first:
+      213: 8094851757492182755
+    second: GreenSlime_8
+  - first:
+      213: 1716482015228993432
+    second: GreenSlime_IdlePlay_1
+  - first:
+      213: 440734978823021610
+    second: GreenSlime_IdlePlay_2
+  - first:
+      213: 8676588886384998731
+    second: GreenSlime_11
+  - first:
+      213: -6728088728372849589
+    second: GreenSlime_12
+  - first:
+      213: -5829030762072236172
+    second: GreenSlime_Jump_1
+  - first:
+      213: 850772895042193332
+    second: GreenSlime_Jump_2
+  - first:
+      213: 8155407230626054411
+    second: GreenSlime_Jump_3
+  - first:
+      213: 3636287480195383754
+    second: GreenSlime_Jump_4
+  - first:
+      213: -703698597675713
+    second: GreenSlime_Jump_5
+  - first:
+      213: -7783061479299451754
+    second: GreenSlime_Jump_6
+  - first:
+      213: 9201844986778463733
+    second: GreenSlime_Idle_1
+  - first:
+      213: -2151914254401620085
+    second: GreenSlime_Idle_2
+  - first:
+      213: 6250732265560371806
+    second: GreenSlime_21
+  - first:
+      213: -8658341707504074858
+    second: GreenSlime_Die_1
+  - first:
+      213: -4898338630180215433
+    second: GreenSlime_Die_2
+  - first:
+      213: 120136762825929395
+    second: GreenSlime_Die_3
+  - first:
+      213: -4199665193942132934
+    second: GreenSlime_Die_4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreenSlime_land_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 41
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59090906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d73bd66d000ce790800000000000000
+      internalID: -7499619221918500907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_land_4
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 59
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1d033909e4ec7f0800000000000000
+      internalID: -590448118287248900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_land_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 59
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22a66f35199a9470800000000000000
+      internalID: 8402196371350135343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_land_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 59
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451b07da3da7571a0800000000000000
+      internalID: -6812403811761475244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_land_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 59
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e04ba0c3f2b1a70800000000000000
+      internalID: 8798678231922511503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 41
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b879ce67df05420800000000000000
+      internalID: 2616870070719580940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 41
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833ed5e7a6bb28db0800000000000000
+      internalID: -4791060987507776712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 41
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6817ea141a46b9880800000000000000
+      internalID: -8603172019406737018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 41
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee94caf8c0b65070800000000000000
+      internalID: 8094851757492182755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_IdlePlay_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 41
+        width: 15
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f121d6c4b22d710800000000000000
+      internalID: 1716482015228993432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_IdlePlay_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 41
+        width: 15
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24e5dcc02ecd1600800000000000000
+      internalID: 440734978823021610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 41
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4974132f9f696870800000000000000
+      internalID: 8676588886384998731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_12
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 41
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44d600d2f601a2a0800000000000000
+      internalID: -6728088728372849589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Jump_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 20
+        width: 14
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f1cd9c76f1b1fa0800000000000000
+      internalID: -5829030762072236172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Jump_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 20
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b74581c07d8ecb00800000000000000
+      internalID: 850772895042193332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Jump_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 17
+        width: 15
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b014e14caa3dd2170800000000000000
+      internalID: 8155407230626054411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Jump_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 14
+        width: 21
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac10f368230b67230800000000000000
+      internalID: 3636287480195383754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Jump_5
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 16
+        width: 18
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d7e076dff7dfff0800000000000000
+      internalID: -703698597675713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Jump_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 20
+        width: 16
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694745d22d20df390800000000000000
+      internalID: -7783061479299451754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 20
+        width: 13
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fda323134583bf70800000000000000
+      internalID: 9201844986778463733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 19
+        width: 16
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87ba4f036dd222e0800000000000000
+      internalID: -2151914254401620085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Die_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 13
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f3544471467d780800000000000000
+      internalID: -8658341707504074858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Die_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 13
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775e886e7fa950cb0800000000000000
+      internalID: -4898338630180215433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Die_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 13
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b274b0dfbfcaa100800000000000000
+      internalID: 120136762825929395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenSlime_Die_4
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 13
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37d183c1cac7b5c0800000000000000
+      internalID: -4199665193942132934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GreenSlime_Jump_3: 8155407230626054411
+      GreenSlime_land_4: -590448118287248900
+      GreenSlime_land_1: 8798678231922511503
+      GreenSlime_11: 8676588886384998731
+      GreenSlime_Jump_1: -5829030762072236172
+      GreenSlime_Idle_2: -2151914254401620085
+      GreenSlime_5: 2616870070719580940
+      GreenSlime_land_5: -7499619221918500907
+      GreenSlime_Die_3: 120136762825929395
+      GreenSlime_8: 8094851757492182755
+      GreenSlime_IdlePlay_1: 1716482015228993432
+      GreenSlime_Jump_5: -703698597675713
+      GreenSlime_12: -6728088728372849589
+      GreenSlime_IdlePlay_2: 440734978823021610
+      GreenSlime_land_2: -6812403811761475244
+      GreenSlime_Die_4: -4199665193942132934
+      GreenSlime_Jump_2: 850772895042193332
+      GreenSlime_Idle_1: 9201844986778463733
+      GreenSlime_Jump_4: 3636287480195383754
+      GreenSlime_land_3: 8402196371350135343
+      GreenSlime_6: -4791060987507776712
+      GreenSlime_7: -8603172019406737018
+      GreenSlime_Die_2: -4898338630180215433
+      GreenSlime_Die_1: -8658341707504074858
+      GreenSlime_Jump_6: -7783061479299451754
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
