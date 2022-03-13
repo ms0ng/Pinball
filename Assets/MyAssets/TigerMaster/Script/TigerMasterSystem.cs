@@ -1,4 +1,4 @@
-using DG.Tweening;
+﻿using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,7 +40,9 @@ public class TigerMasterSystem : MonoSingleton<TigerMasterSystem>
                 i--;
                 continue;
             }
-            GetHurt(data, UnityEngine.Random.Range(0, 100));
+#if UNITY_EDITOR
+            if (Input.GetKeyDown(KeyCode.Space)) GetHurt(data, UnityEngine.Random.Range(0, 100));
+#endif
             UpdateFSM(data, Time.deltaTime);
         }
     }
@@ -51,7 +53,6 @@ public class TigerMasterSystem : MonoSingleton<TigerMasterSystem>
 
     public void GetHurt(TigerMasterData data, float damage)
     {
-        if (!Input.GetKeyDown(KeyCode.Space)) return;
         data.HP -= damage;
         data.BreakdownDamage += damage * 0.5f;
         data.HPBar.AddValue(-damage);

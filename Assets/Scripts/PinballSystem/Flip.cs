@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Flip : MonoBehaviour {
+public class Flip : MonoBehaviour
+{
 
     public float torqueForce;
     public float tiltAngle = 30.0F;
@@ -28,7 +29,12 @@ public class Flip : MonoBehaviour {
 #endif
     }
 
-    void Update ()
+    private void Update()
+    {
+
+    }
+
+    void Update0()
     {
         if (currentPlatformAndroid == true)
         {
@@ -76,7 +82,7 @@ public class Flip : MonoBehaviour {
             {
                 FlipRight();
             }
-      }
+        }
     }
 
 

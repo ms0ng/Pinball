@@ -16,6 +16,7 @@ public class BattleFieldManager : MonoBehaviour
     {
         public string desc;
         public Transform CameraPosition;
+        public Transform PlayerSpawnPosition;
         public List<GameObject> Monsters;
     }
 
@@ -45,15 +46,23 @@ public class BattleFieldManager : MonoBehaviour
 
     public void GoField(int fieldIndex)
     {
-        if (fieldIndex >= BattleInfo.Count) return;
-        LookField(fieldIndex, () => SpawnMonsters(fieldIndex));
+        if (fieldIndex >= BattleInfo.Count)
+        {
+            return;
+        }
+        Manipulator.Instance.PlayerPos.gameObject.SetActive(false);
+        LookField(fieldIndex, () =>
+        {
+            SpawnMonsters(fieldIndex);
+            SpawnPlayer(fieldIndex);
+            Manipulator.Instance.PlayerPos.gameObject.SetActive(true);
+        });
 
     }
     public void LookField(int index, System.Action onComplete = null)
     {
         Camera camera = Camera.current;
         if (CameraOverride) camera = CameraOverride;
-        //camera.transform.position = BattleInfo[index].CameraPosition.position;
         camera.transform.DOMoveY(BattleInfo[index].CameraPosition.position.y, 1).SetEase(Ease.OutQuart).onComplete = () => onComplete?.Invoke();
     }
 
@@ -63,8 +72,19 @@ public class BattleFieldManager : MonoBehaviour
         monsters.ForEach((m) => m.SetActive(true));
     }
 
+    private void SpawnPlayer(int spawnListIndex)
+    {
+        Transform player = Manipulator.Instance.PlayerPos;
+        player.position = BattleInfo[spawnListIndex].PlayerSpawnPosition.position;
+    }
+
     public void CheckField()
     {
+        if (_curBattleField >= BattleInfo.Count)
+        {
+            OnGameEnd();
+            return;
+        }
         var monsters = BattleInfo[_curBattleField].Monsters;
         for (int i = 0; i < monsters.Count; i++)
         {
@@ -79,6 +99,11 @@ public class BattleFieldManager : MonoBehaviour
         {
             GoField(++_curBattleField);
         }
+    }
+
+    public void OnGameEnd(bool victory = true)
+    {
+        Debug.Log("游戏结束");
     }
 
 }
