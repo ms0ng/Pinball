@@ -2,14 +2,17 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleFieldManager : MonoBehaviour
 {
     public List<MonstersList> BattleInfo;
     public Camera CameraOverride;
+    public RectTransform mBravo;
 
     [Header("变量")]
     public int _curBattleField = 0;
+    public bool onGameEnd;
 
     [System.Serializable]
     public class MonstersList
@@ -27,7 +30,7 @@ public class BattleFieldManager : MonoBehaviour
 
     void Start()
     {
-        GoField(_curBattleField);
+        GoNextBattle(_curBattleField);
     }
 
     float testTimeCount = 0;
@@ -44,7 +47,7 @@ public class BattleFieldManager : MonoBehaviour
         }
     }
 
-    public void GoField(int fieldIndex)
+    public void GoNextBattle(int fieldIndex)
     {
         if (fieldIndex >= BattleInfo.Count)
         {
@@ -82,7 +85,7 @@ public class BattleFieldManager : MonoBehaviour
     {
         if (_curBattleField >= BattleInfo.Count)
         {
-            OnGameEnd();
+            if (!onGameEnd) OnGameEnd();
             return;
         }
         var monsters = BattleInfo[_curBattleField].Monsters;
@@ -97,13 +100,21 @@ public class BattleFieldManager : MonoBehaviour
         }
         if (monsters.Count < 1 && _curBattleField < BattleInfo.Count)
         {
-            GoField(++_curBattleField);
+            GoNextBattle(++_curBattleField);
         }
     }
 
     public void OnGameEnd(bool victory = true)
     {
-        Debug.Log("游戏结束");
+        onGameEnd = true;
+        Manipulator.Instance.PlayerPos.gameObject.SetActive(false);
+        mBravo.gameObject.SetActive(true);
+        mBravo.localScale = Vector3.zero;
+        mBravo.DOScale(Vector3.one, 0.75f).SetEase(Ease.OutExpo).onComplete += () =>
+        {
+            float t = 0;
+            DOTween.To(() => t, x => t = x, 1, 1).onComplete += () => SceneManager.LoadSceneAsync(0);
+        };
     }
 
 }
