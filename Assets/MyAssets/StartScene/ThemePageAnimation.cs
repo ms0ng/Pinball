@@ -49,6 +49,7 @@ public class ThemePageAnimation : MonoBehaviour
     {
         mSceneLoadBtn.interactable = false;
         var seq = DOTween.Sequence();
+        seq.AppendInterval(0.5f);
 
         mBackground.localScale = Vector3.one * mBGInitialScale;
         seq.Append(mBackground.DOScale(mBGFinalScale, mBGScaleDuration).SetEase(mBGScaleEase));
@@ -64,7 +65,11 @@ public class ThemePageAnimation : MonoBehaviour
         mTapText.anchoredPosition = mTapTextInitialPos;
         seq.Join(mTapText.DOAnchorPos(mTapTextFinalPos, mTapTextMoveDuration).SetEase(mTapTextMoveEase));
 
-        seq.onComplete += () => mSceneLoadBtn.interactable = true;
+        seq.onComplete += () =>
+        {
+            mSceneLoadBtn.interactable = true;
+            AudioManager.Instance.Play("Theme");
+        };
         seq.Play();
 
         //浮动动画
@@ -80,5 +85,10 @@ public class ThemePageAnimation : MonoBehaviour
                 Random.Range(2, 5))
                 .SetLoops(-1, LoopType.Yoyo);
         }
+    }
+
+    private void OnDisable()
+    {
+        AudioManager.Instance.Stop("Theme");
     }
 }

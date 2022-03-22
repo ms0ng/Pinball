@@ -19,6 +19,8 @@ public class UIDialogController : MonoBehaviour
     public bool mAutoPlay = false;
     public float mAutoPlayWaitTime = 2f;
 
+    public System.Action OnDialogueComplete;
+
     private Vector2 _speakerLPos;
     private Vector2 _speakerRPos;
 
@@ -84,7 +86,10 @@ public class UIDialogController : MonoBehaviour
 
     public void Hide()
     {
-        _rectTransform.DOAnchorPosY(-_rectTransform.rect.height, 0.5f);
+        _rectTransform.DOAnchorPosY(-_rectTransform.rect.height, 0.5f).onComplete += () =>
+        {
+            OnDialogueComplete?.Invoke();
+        };
     }
 
     public void SetDialogData(DialogData dialogData, bool playImmediately = false)

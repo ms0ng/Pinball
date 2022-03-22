@@ -8,15 +8,26 @@ public class ThemePageSceneLoader : MonoBehaviour
 {
     public TextMeshProUGUI mTapText;
     public string mDefaultScene;
+    public DialogData mDialogueData;
+
+
     public void OnTapToStartBtnClick(string sceneName)
     {
-        mTapText.text = "正在载入...";
+        DialogManager.dialogDataStatic = mDialogueData;
         StartCoroutine(LoadScene(string.IsNullOrEmpty(sceneName) ? mDefaultScene : sceneName));
     }
 
     public IEnumerator LoadScene(string sceneName)
     {
-        yield return null;
-        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        var op = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        op.allowSceneActivation = false;
+        while (op.progress < 0.9f)
+        {
+            if (mTapText) mTapText.text = $"正在载入...{ op.progress * 100 }% ";
+            yield return null;
+        }
+        if (mTapText) mTapText.text = "载入完成";
+        yield return new WaitForSeconds(1);
+        op.allowSceneActivation = true;
     }
 }

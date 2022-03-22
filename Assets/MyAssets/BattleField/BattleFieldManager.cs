@@ -72,6 +72,7 @@ public class BattleFieldManager : MonoBehaviour
     public void SpawnMonsters(int spawnListIndex)
     {
         List<GameObject> monsters = BattleInfo[spawnListIndex].Monsters;
+        if (monsters.Count > 0) Manipulator.Instance.MainEnemy = monsters[0].transform;
         monsters.ForEach((m) => m.SetActive(true));
     }
 

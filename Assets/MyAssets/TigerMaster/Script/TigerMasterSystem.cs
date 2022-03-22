@@ -56,6 +56,8 @@ public class TigerMasterSystem : MonoSingleton<TigerMasterSystem>
         data.HP -= damage;
         data.BreakdownDamage += damage * 0.5f;
         data.HPBar.AddValue(-damage);
+        HitNumManager.Instance.AddHitnumOne(Manipulator.Instance.PlayerPos.transform.position, (int)damage);
+
         Debug.Log($"Enemy Get Damage : {data.HP}");
     }
 
@@ -65,7 +67,7 @@ public class TigerMasterSystem : MonoSingleton<TigerMasterSystem>
         var atkArea = data.skill_Scratch.GetComponent<BoxCollider2D>();
         if (atkArea.OverlapPoint(Manipulator.Instance.PlayerPos.position))
         {
-            Debug.Log("Attak Player!");
+            Debug.Log("Enemy Attak Player");
         }
     }
     public void Attack_Scratch_End(TigerMasterData data)

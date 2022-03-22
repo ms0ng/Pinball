@@ -15,6 +15,7 @@ public class FlipButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     {
         _holding = true;
         _lastHoldTime = Time.time;
+        AudioManager.Instance.Play("弹射器弹射");
     }
 
     public void OnPointerExit(PointerEventData eventData)
