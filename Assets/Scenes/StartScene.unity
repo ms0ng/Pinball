@@ -572,7 +572,7 @@ PrefabInstance:
     - target: {fileID: 1058788044153698593, guid: f16f70e533baedd47993be2501238d50,
         type: 3}
       propertyPath: mDefaultScene
-      value: Scenes/DialogueScene
+      value: Scenes/ChapterScene
       objectReference: {fileID: 0}
     - target: {fileID: 1058788044153698593, guid: f16f70e533baedd47993be2501238d50,
         type: 3}
