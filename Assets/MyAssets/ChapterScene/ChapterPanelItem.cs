@@ -9,6 +9,7 @@ public class ChapterPanelItem : MonoBehaviour
 {
     public Text ChapterName;
     public Image Thumbnail;
+    public Button mStartBtn;
     public Text ChapterIndex_1;
     public Text ChapterIndex;
     public Text Preconditions;
@@ -17,46 +18,41 @@ public class ChapterPanelItem : MonoBehaviour
     public GameObject ProgressPercent;
     public Text ProgressPercentText;
     [Header("参数")]
-    public int chapter;
-    public string chapterName;
+    MissionSO mMissionData;
 
-    private int _OpenSceneID;
-
-    public void SetData(int chapter, string chapterName, Sprite sprite, bool setLock, int openSceneID)
+    public void SetData(MissionSO missionData)
     {
-        _OpenSceneID = openSceneID;
-        this.chapter = chapter;
-        //设置文字
-        ChapterName.text = $"{chapterName}";
-        ChapterIndex_1.text = $"第{chapter}章";
-        ChapterIndex.text = chapter.ToString("D2");
-        Thumbnail.sprite = sprite;
-        Preconditions.text = $"通关第{chapter - 1}章";
-        Lock.SetActive(setLock);
+        this.mMissionData = missionData;
+        ChapterName.text = $"{missionData.missionName}";
+        ChapterIndex_1.text = $"第{missionData.missionIndex}章";
+        ChapterIndex.text = missionData.missionIndex.ToString("D2");
+        Thumbnail.sprite = missionData.thumbnailSprite;
+        Preconditions.text = $"通关第{missionData.missionIndex - 1}章";
+        Lock.SetActive(false);
         //计算完成度
         //float progress = 0f;
         //if (ProgressPercentText) ProgressPercentText.text = $"{progress * 100}%";
+
+        mStartBtn.onClick.RemoveAllListeners();
+        mStartBtn.onClick.AddListener(OnClick);
     }
 
     public void OnClick()
     {
-        DOLoadScene(loadScene);
-    }
-
-    public void DOLoadScene(LoadScene loadScene)
-    {
         string sceneName = "Scenes/StartScene";
-        switch (loadScene)
+        string scenePath = "Scenes/StartScene";
+        switch (mMissionData.missionType)
         {
-            case ChapterPanelItem.LoadScene.BattleScene:
+            case MissionType.Battle:
                 sceneName = "Scenes/BattleScene";
                 break;
-            case ChapterPanelItem.LoadScene.DialogueScene:
+            case MissionType.Dialogue:
+                DialogManager.dialogDataStatic = mMissionData.dialogData;
                 sceneName = "Scenes/DialogueScene";
                 break;
             default:
                 break;
         }
-        SceneManager.LoadSceneAsync(SceneManager.GetSceneByName(sceneName).buildIndex);
+        SceneManager.LoadSceneAsync(sceneName);
     }
 }

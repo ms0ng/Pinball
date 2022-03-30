@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 4022566569805778635}
   - component: {fileID: 3308787120126074030}
   - component: {fileID: 2253072238062043498}
+  - component: {fileID: 8703457105186875812}
   m_Layer: 5
   m_Name: Chapter
   m_TagString: Untagged
@@ -366,6 +367,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8703457105186875812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824882604723775789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5523912dd2f79a40a34a4125d2033e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChapterName: {fileID: 6693703724461964425}
+  Thumbnail: {fileID: 3383622216720285099}
+  mStartBtn: {fileID: 1271812192609311260}
+  ChapterIndex_1: {fileID: 4344120744425981280}
+  ChapterIndex: {fileID: 1450356270648349679}
+  Preconditions: {fileID: 8763827598021979835}
+  Lock: {fileID: 5019719636047845217}
+  ProgressPercent: {fileID: 7461923204944566809}
+  ProgressPercentText: {fileID: 8011650832326358332}
 --- !u!1 &2840199842679462107
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mLoopListView: {fileID: 8190075342406360974}
+  mChapterData: {fileID: 0}
 --- !u!1 &3712820526916613835
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine;
 public class ChapterPanel : MonoBehaviour
 {
     public LoopListView2 mLoopListView;
+    public ChapterSO mChapterData;
     private int ListCount = 3;
     private int CheckPoint;
 
@@ -16,13 +17,13 @@ public class ChapterPanel : MonoBehaviour
 
     public void InitListView()
     {
-        mLoopListView.InitListView(ListCount, OnGetItemByIndex);
+        mLoopListView.InitListView(mChapterData.missions.Count, OnGetItemByIndex);
         mLoopListView.SetSnapTargetItemIndex(0);
     }
 
     LoopListViewItem2 OnGetItemByIndex(LoopListView2 listView, int index)
     {
-        if (index < 0 || index >= ListCount)
+        if (index < 0 || index >= mChapterData.missions.Count)
         {
             return null;
         }
@@ -32,7 +33,7 @@ public class ChapterPanel : MonoBehaviour
 
         if (itemScript)
         {
-            itemScript.SetData(index, $"第{index}章", null, true, 1);
+            itemScript.SetData(mChapterData.missions[index]);
         }
         return item;
     }
