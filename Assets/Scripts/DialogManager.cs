@@ -52,7 +52,7 @@ public class DialogManager : MonoBehaviour
 
     private void OnDialogueComplete()
     {
-        mBlackCurtain.DOFade(1, 2).onComplete += () => SceneManager.LoadSceneAsync("Scenes/BattleScene", LoadSceneMode.Single);
+        mBlackCurtain.DOFade(1, 2).onComplete += () => SceneManager.LoadSceneAsync("Scenes/ChapterScene");
     }
 
     private void OnDestroy()

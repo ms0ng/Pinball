@@ -114,7 +114,7 @@ public class BattleFieldManager : MonoBehaviour
         mBravo.DOScale(Vector3.one, 0.75f).SetEase(Ease.OutExpo).onComplete += () =>
         {
             float t = 0;
-            DOTween.To(() => t, x => t = x, 1, 1).onComplete += () => SceneManager.LoadSceneAsync(0);
+            DOTween.To(() => t, x => t = x, 1, 1).onComplete += () => SceneManager.LoadSceneAsync("Scenes/ChapterScene");
         };
     }
 
