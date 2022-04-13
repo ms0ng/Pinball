@@ -337,8 +337,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u70B9\u51FB\u6216\u89E6\u6478\u4EE5\u5F00\u59CB"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72e25f5e19e0c1c41856932ec4483f1f, type: 2}
-  m_sharedMaterial: {fileID: 4760725853045489271, guid: 72e25f5e19e0c1c41856932ec4483f1f,
+  m_fontAsset: {fileID: 11400000, guid: 04e4329919a044d44b16c8c00a39d04f, type: 2}
+  m_sharedMaterial: {fileID: 8669409766705633632, guid: 04e4329919a044d44b16c8c00a39d04f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -780,6 +780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mTapText: {fileID: 7499265421695707747}
   mDefaultScene: Scenes/Level1
+  mDialogueData: {fileID: 0}
 --- !u!1 &7499265422631772495
 GameObject:
   m_ObjectHideFlags: 0
