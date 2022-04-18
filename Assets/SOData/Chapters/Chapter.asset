@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7cd96718ca28b44dbc470cea0fbbc72, type: 3}
   m_Name: Chapter
   m_EditorClassIdentifier: 
-  chapterName: 0
+  chapterName: 
   missions:
   - {fileID: 11400000, guid: fef9516daf2988a40b4fca2cc137d4c2, type: 2}
   - {fileID: 11400000, guid: 3dadf0b916288ad4ab01283322c56900, type: 2}
+  - {fileID: 11400000, guid: 8f162ac1148ba3e43b141a23518c0ac6, type: 2}
