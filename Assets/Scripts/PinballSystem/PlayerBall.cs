@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -41,7 +42,8 @@ public class PlayerBall : MonoBehaviour
         {
             Debug.Log($"Player Hit: {collision.gameObject.name}");
             AudioManager.Instance.Play("PlayerHit");
-            TigerMasterSystem.Instance.GetHurt(data, 100);
+            TigerMasterSystem.Instance.GetHurt(data, UnityEngine.Random.Range(10, 150));
+            Manipulator.Instance.MainCamera.DOShakePosition(0.1f, 0.05f);
             return;
         }
         else if (collision.gameObject.TryGetComponent<Flip>(out Flip flip))

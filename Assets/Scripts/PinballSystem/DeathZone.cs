@@ -26,7 +26,9 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.transform == player)
         {
-            Debug.Log("collision:" + collision.gameObject.name);
+            //Debug.Log("collision:" + collision.gameObject.name);
+            Debug.Log("掉入死亡区域，弹出" + collision.gameObject.name);
+            player.localPosition += new Vector3(0, 0.5f, 0);
             Vector2 force = new Vector2((Random.Range(0, 100) % 2 == 0 ? 1 : -1) * mAddForce, mAddForce);
             playerRB.AddForce(force);
         }

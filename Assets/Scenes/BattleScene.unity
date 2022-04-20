@@ -2307,6 +2307,11 @@ PrefabInstance:
       propertyPath: PlayerPos
       value: 
       objectReference: {fileID: 2120048432}
+    - target: {fileID: 7040450197345601671, guid: ca7831d5ac2323940ac552cdca78c4d5,
+        type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 684470434}
     - target: {fileID: 7040450197345601688, guid: ca7831d5ac2323940ac552cdca78c4d5,
         type: 3}
       propertyPath: m_Name

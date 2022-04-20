@@ -22,4 +22,4 @@ MonoBehaviour:
     sprite: {fileID: 708585563887739796, guid: 768c9cf020f589d40a4e7739a232c19b, type: 3}
   mTextAssets:
   - {fileID: 4900000, guid: c4f2640b8e3020a4e89e2fd8d57e274c, type: 3}
-  mLogDebug: 0
+  mLogDebug: 1

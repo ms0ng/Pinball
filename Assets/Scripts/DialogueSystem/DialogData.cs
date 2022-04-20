@@ -37,16 +37,15 @@ public class DialogData : ScriptableObject
 
     public List<Dialog> LoadTextAsset()
     {
-        if (_dialogs != null) _dialogs = new List<Dialog>();
-        Log($"Will Load {mTextAssets.Count} Text File(s).");
-        _dialogs.Clear();
+        _dialogs = new();
+        Log($"支持多文件合并载入，总共需要载入 {mTextAssets.Count} 个文件.");
         foreach (var item in mTextAssets)
         {
             Log($"Load Text File: {item.name}");
             TextAssetHandle(item);
         }
         PrintDialogs();
-        Log($"{mTextAssets.Count} Files Has Been Loaded.");
+        Log($"{mTextAssets.Count} 个文件载入完毕.");
         return _dialogs;
     }
 
