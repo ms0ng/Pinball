@@ -41,6 +41,7 @@ public class PlayerBall : MonoBehaviour
         if (collision.gameObject.TryGetComponent<TigerMasterData>(out TigerMasterData data))
         {
             Debug.Log($"Player Hit: {collision.gameObject.name}");
+            //播放击中音效
             AudioManager.Instance.Play("PlayerHit");
             TigerMasterSystem.Instance.GetHurt(data, UnityEngine.Random.Range(10, 150));
             Manipulator.Instance.MainCamera.DOShakePosition(0.1f, 0.05f);
@@ -50,6 +51,7 @@ public class PlayerBall : MonoBehaviour
         {
             SkillCoolDown = true;
         }
+        //播放未击中音效
         AudioManager.Instance.Play("PlayerHitNothing");
     }
 }

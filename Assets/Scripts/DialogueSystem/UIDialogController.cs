@@ -110,21 +110,25 @@ public class UIDialogController : MonoBehaviour
             Hide();
             return;
         }
+        //判断逐字打印的协程是否为空
         if (_playingCoroutine == null)
         {
-            //----------
+            //设置头像
             SetSpeakerImage();
             //-----仅设置一边的头像-----
             //mSpeakerL.transform.localScale = Vector3.one;
             //SetSpeakerImageOneSideOnly(mSpeakerL);
-            //----------
+            //修改讲话人姓名
             PrintSpeakerName();
+            //开始逐字打印
             _playingCoroutine = StartCoroutine(PrintText());
         }
         else
         {
+            //停止正在打印的协程
             StopCoroutine(_playingCoroutine);
             _playingCoroutine = null;
+            //直接显示所有文字
             PrintTextAll();
             _dialogIndex++;
         }
