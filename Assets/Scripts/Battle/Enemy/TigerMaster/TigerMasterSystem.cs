@@ -56,7 +56,8 @@ public class TigerMasterSystem : MonoSingleton<TigerMasterSystem>
         data.HP -= damage;
         data.BreakdownDamage += damage * 0.5f;
         data.HPBar.AddValue(-damage);
-        HitNumManager.Instance.AddHitnumOne(Manipulator.Instance.PlayerPos.transform.position, (int)damage);
+        Vector3 randomPos = new Vector3(Random.Range(-0.3f, 0.3f), Random.Range(-0.3f, 0.3f));
+        HitNumManager.Instance.AddHitnumOne(Manipulator.Instance.PlayerPos.transform.position + randomPos, (int)damage);
 
         Debug.Log($"Enemy Get Damage : {data.HP}");
     }
