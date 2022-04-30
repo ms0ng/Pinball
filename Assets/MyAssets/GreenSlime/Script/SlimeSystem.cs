@@ -1,51 +1,39 @@
-using Assets.AI.GreenSlime;
+﻿using Assets.AI.GreenSlime;
 using MSFrame;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SlimeSystem
+public class SlimeSystem : MonsterSystem<SlimeSystem>
 {
-    private static SlimeSystem instance;
-    public static SlimeSystem Instance
+    public override void InitComponent(MonsterComponentData monsterComponentData)
     {
-        get
-        {
-            if (instance == null)
-            {
-                instance = new SlimeSystem();
-            }
-            return instance;
-        }
+        base.InitComponent(monsterComponentData);
+        InitComponent((SlimeComponentData)monsterComponentData);
     }
-
-    internal void RemoveComponent(SlimeComponentData slimeComponentData)
-    {
-        throw new NotImplementedException();
-    }
-
-    internal void AddComponent(SlimeComponentData slimeComponentData)
-    {
-        throw new NotImplementedException();
-    }
-
     public void InitComponent(SlimeComponentData monsterComponentData)
     {
         var data = (SlimeComponentData)monsterComponentData;
         data.FSM = new SlimeFSM(data);
-        data.MaxHP = 100;
         data.HP = data.MaxHP;
+        data.HPBar.InitHPBar(data.MaxHP);
     }
 
-    public void UpdateComponent(SlimeComponentData monsterComponentData)
+    public override void UpdateComponent(MonsterComponentData monsterComponentData)
     {
         var data = (SlimeComponentData)monsterComponentData;
         data.FSM.Update();
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Space)) GetHurt(data, UnityEngine.Random.Range(0, 100));
+#endif
     }
-
-    public void OnAttack()
+    public void GetHurt(SlimeComponentData data, float damage)
     {
-
+        data.HP -= damage;
+        Vector3 randomPos = new Vector3(UnityEngine.Random.Range(-0.3f, 0.3f), UnityEngine.Random.Range(-0.3f, 0.3f));
+        HitNumManager.Instance.AddHitnumOne(Manipulator.Instance.PlayerPos.transform.position + randomPos, (int)damage);
+        data.HPBar.AddValue(-damage);
+        Debug.Log($"Enemy Slime Get Damage : {data.HP}");
     }
 }

@@ -48,6 +48,16 @@ public class PlayerBall : MonoBehaviour
             AudioManager.Instance.Play("PlayerHit");
             return;
         }
+        else if (collision.gameObject.TryGetComponent(out SlimeComponentData _data))
+        {
+            Debug.Log($"Player Hit: {collision.gameObject.name}");
+            SlimeSystem.Instance.GetHurt((SlimeComponentData)_data, UnityEngine.Random.Range(10, 150));
+            HitEffectManager.Instance.Show(transform.position);
+            Manipulator.Instance.MainCamera.DOShakePosition(0.1f, 0.05f);
+            //播放击中音效
+            AudioManager.Instance.Play("PlayerHit");
+            return;
+        }
         else if (collision.gameObject.TryGetComponent<Flip>(out Flip flip))
         {
             SkillCoolDown = true;

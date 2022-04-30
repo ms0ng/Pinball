@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using MSFrame;
 
-public abstract class MonsterComponentData : MonoBehaviour, IMonsterComponentData
+public class MonsterComponentData : MonoBehaviour
 {
-    protected abstract MonsterSystem System { get; }
-    public void Start() => System.AddComponent(this);
-    public void OnDestroy() => System.RemoveComponent(this);
+    //public MonsterSystem<SystemType> System;
+    //public void Start() => System.AddComponent(this);
+    //public void OnDestroy() => System.RemoveComponent(this);
 
 
     [Header("基本属性")]

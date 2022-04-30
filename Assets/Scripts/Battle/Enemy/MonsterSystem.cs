@@ -1,15 +1,15 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MSFrame;
 
-public class MonsterSystem
+public class MonsterSystem<T> : Singleton<T>, IMonsterSystem where T : new()
 {
     public bool Pause { get => _pause; }
     public List<MonsterComponentData> Components { get => _components; }
 
     private bool _pause;
-    private List<MonsterComponentData> _components;
+    private List<MonsterComponentData> _components = new();
 
     public virtual void Start()
     {
@@ -51,7 +51,7 @@ public class MonsterSystem
     {
         InitComponent(monsterComponent);
         _components.Add(monsterComponent);
-        //MonsterSystemManager.Instance.AddSystem(this);
+        MonsterSystemManager.Instance.AddSystem(this);
     }
 
     public void RemoveComponent(MonsterComponentData monsterComponent)

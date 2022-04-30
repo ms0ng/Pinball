@@ -1,16 +1,17 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MSFrame;
 
-public class MonsterSystemManager : MonoBehaviour
+public class MonsterSystemManager : MonoSingleton<MonsterSystemManager>
 {
     public List<IMonsterSystem> System { get => _systems; }
-    private List<IMonsterSystem> _systems;
+    private List<IMonsterSystem> _systems = new();
 
-    public void Awake()
+    public override void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        base.Awake();
+        //DontDestroyOnLoad(gameObject);
     }
 
     public void Start()
