@@ -20,14 +20,14 @@ public class ChapterPanelItem : MonoBehaviour
     [Header("参数")]
     MissionSO mMissionData;
 
-    public void SetData(MissionSO missionData)
+    public void SetData(MissionSO missionData, int index)
     {
         this.mMissionData = missionData;
         ChapterName.text = $"{missionData.missionName}";
-        ChapterIndex_1.text = $"第{missionData.missionIndex}章";
-        ChapterIndex.text = missionData.missionIndex.ToString("D2");
+        ChapterIndex_1.text = $"第{index}章";
+        ChapterIndex.text = index.ToString("D2");
         Thumbnail.sprite = missionData.thumbnailSprite;
-        Preconditions.text = $"通关第{missionData.missionIndex - 1}章";
+        //Preconditions.text = $"通关第{missionData.missionIndex - 1}章";
         Lock.SetActive(false);
         //计算完成度
         //float progress = 0f;

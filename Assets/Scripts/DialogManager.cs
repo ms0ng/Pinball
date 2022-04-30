@@ -26,15 +26,9 @@ public class DialogManager : MonoBehaviour
     void Start()
     {
         if (dialogDataStatic) dialogData = dialogDataStatic;
-        mFiledImage.sprite = mFieldSprite;
-        AudioManager.Instance.Play("对话1");
+        mFiledImage.sprite = dialogData.fieldSprite;
+        AudioManager.Instance.Play(dialogData.music);
         PlayAnimation_MoveField();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void PlayAnimation_MoveField()

@@ -6,6 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Dialog/Create Dialog Sriptable Object")]
 public class DialogData : ScriptableObject
 {
+    public Sprite fieldSprite;
+    public string music;
     public List<SpeakerDefine> mSpeakerDefine;
     public List<TextAsset> mTextAssets;
     public bool mLogDebug;

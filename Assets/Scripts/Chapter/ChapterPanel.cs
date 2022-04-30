@@ -1,4 +1,4 @@
-using SuperScrollView;
+﻿using SuperScrollView;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +7,6 @@ public class ChapterPanel : MonoBehaviour
 {
     public LoopListView2 mLoopListView;
     public ChapterSO mChapterData;
-    private int ListCount = 3;
     private int CheckPoint;
 
     private void Start()
@@ -33,7 +32,7 @@ public class ChapterPanel : MonoBehaviour
 
         if (itemScript)
         {
-            itemScript.SetData(mChapterData.missions[index]);
+            itemScript.SetData(mChapterData.missions[index], index + 1);
         }
         return item;
     }

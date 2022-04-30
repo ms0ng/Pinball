@@ -4,7 +4,7 @@
 public class MissionSO : ScriptableObject
 {
     public string missionName;      //关卡名称
-    public int missionIndex;        //关卡索引
+    //public int missionIndex;        //关卡索引
     public Sprite thumbnailSprite;  //关卡图片
     public MissionType missionType; //关卡类型:战斗或剧情
 
