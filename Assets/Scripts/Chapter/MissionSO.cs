@@ -8,6 +8,8 @@ public class MissionSO : ScriptableObject
     public Sprite thumbnailSprite;  //关卡图片
     public MissionType missionType; //关卡类型:战斗或剧情
 
+    [Header("Battle Param")]
+    public string sceneName;
     [Header("Dialogue Param")]
     public DialogData dialogData;   //剧情关卡的对话信息
 }

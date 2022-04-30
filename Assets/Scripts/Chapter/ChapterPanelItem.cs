@@ -44,7 +44,7 @@ public class ChapterPanelItem : MonoBehaviour
         switch (mMissionData.missionType)
         {
             case MissionType.Battle:
-                sceneName = "Scenes/BattleScene";
+                sceneName = "Scenes/BattleScene/" + mMissionData.sceneName;
                 break;
             case MissionType.Dialogue:
                 DialogManager.dialogDataStatic = mMissionData.dialogData;
