@@ -14,13 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chapterName: 
   missions:
+  - {fileID: 11400000, guid: 914ecacf09ee70d4c933d9148b74488d, type: 2}
   - {fileID: 11400000, guid: fef9516daf2988a40b4fca2cc137d4c2, type: 2}
   - {fileID: 11400000, guid: 3dadf0b916288ad4ab01283322c56900, type: 2}
   - {fileID: 11400000, guid: 8f162ac1148ba3e43b141a23518c0ac6, type: 2}
   - {fileID: 11400000, guid: 07bf3f48e2e45304398bb6c1dac881cd, type: 2}
-  - {fileID: 11400000, guid: c6ce7927df56e5144b83a6289ab218b2, type: 2}
+  - {fileID: 11400000, guid: bfec94b473e9cba45ac4e61551ded0ad, type: 2}
   - {fileID: 11400000, guid: 47f9cf17e7de2194e91499a12cf646b2, type: 2}
+  - {fileID: 11400000, guid: 9c4c1cf56f8edbe489b4ce15ba40cd10, type: 2}
   - {fileID: 11400000, guid: f72368f31658a734d928141cf5cea38d, type: 2}
+  - {fileID: 11400000, guid: 73783ef10567dc4469ede4759b275b64, type: 2}
   - {fileID: 11400000, guid: 55e479b58babbe446a53561f3596294b, type: 2}
+  - {fileID: 11400000, guid: c41dd57a87bedc047ad163a529b47264, type: 2}
   - {fileID: 11400000, guid: 0d05c7d260508f6469da5f9a81b192d5, type: 2}
+  - {fileID: 11400000, guid: 7de9750cfe14f4b45a663d08813f033b, type: 2}
   - {fileID: 11400000, guid: fc9f76678cf199d41816bf2ef93fd6f4, type: 2}
