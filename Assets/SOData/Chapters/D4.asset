@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c4e5f8b23709e4ab563fcb0e047766, type: 3}
   m_Name: D4
   m_EditorClassIdentifier: 
-  missionName: "\u5BF9\u8BDD4"
+  missionName: "\u6765\u5230\u6D77\u5E95"
   thumbnailSprite: {fileID: 21300000, guid: 41ab1324780a63b48934b8fcb2346474, type: 3}
   missionType: 1
+  sceneName: 
   dialogData: {fileID: 11400000, guid: 04afcaa79019f1748bb6025a2ee1b49a, type: 2}

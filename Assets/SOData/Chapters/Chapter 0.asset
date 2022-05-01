@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7cd96718ca28b44dbc470cea0fbbc72, type: 3}
+  m_Name: Chapter 0
+  m_EditorClassIdentifier: 
+  chapterName: 
+  missions:
+  - {fileID: 11400000, guid: 914ecacf09ee70d4c933d9148b74488d, type: 2}
+  - {fileID: 11400000, guid: fef9516daf2988a40b4fca2cc137d4c2, type: 2}
+  - {fileID: 11400000, guid: 3dadf0b916288ad4ab01283322c56900, type: 2}
+  - {fileID: 11400000, guid: 8f162ac1148ba3e43b141a23518c0ac6, type: 2}

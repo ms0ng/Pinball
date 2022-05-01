@@ -23,5 +23,5 @@ MonoBehaviour:
     shortcut: "\u53F2\u9EDB\u62C9"
     sprite: {fileID: 708585563887739796, guid: 768c9cf020f589d40a4e7739a232c19b, type: 3}
   mTextAssets:
-  - {fileID: 4900000, guid: 0d491b359c2e5114591beb02453dfd27, type: 3}
+  - {fileID: 4900000, guid: efe720e48a457864f98d5a5973dfdb2e, type: 3}
   mLogDebug: 0

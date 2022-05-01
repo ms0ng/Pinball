@@ -16,4 +16,4 @@ MonoBehaviour:
   thumbnailSprite: {fileID: 21300000, guid: 41ab1324780a63b48934b8fcb2346474, type: 3}
   missionType: 1
   sceneName: 
-  dialogData: {fileID: 11400000, guid: e83a291c2272ff6408f161623a4b63e8, type: 2}
+  dialogData: {fileID: 11400000, guid: 9521f60bd4d948648a07573c7a1d3c32, type: 2}

@@ -22,6 +22,9 @@ MonoBehaviour:
   - name: "\u53F2\u9EDB\u62C9"
     shortcut: "\u53F2\u9EDB\u62C9"
     sprite: {fileID: 708585563887739796, guid: 768c9cf020f589d40a4e7739a232c19b, type: 3}
+  - name: "\u83B1\u7279"
+    shortcut: "\u83B1\u7279"
+    sprite: {fileID: 21300000, guid: 25bcccb6ff2a8f048b3509249694236d, type: 3}
   mTextAssets:
-  - {fileID: 4900000, guid: 0d491b359c2e5114591beb02453dfd27, type: 3}
+  - {fileID: 4900000, guid: 3417b6f2cdd0e594aba7e2c510afcd14, type: 3}
   mLogDebug: 0
