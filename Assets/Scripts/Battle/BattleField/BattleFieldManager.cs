@@ -108,13 +108,14 @@ public class BattleFieldManager : MonoBehaviour
     public void OnGameEnd(bool victory = true)
     {
         onGameEnd = true;
+        AudioManager.Instance.Play("战斗结束");
         Manipulator.Instance.PlayerPos.gameObject.SetActive(false);
         mBravo.gameObject.SetActive(true);
         mBravo.localScale = Vector3.zero;
         mBravo.DOScale(Vector3.one, 0.75f).SetEase(Ease.OutExpo).onComplete += () =>
         {
             float t = 0;
-            DOTween.To(() => t, x => t = x, 1, 1).onComplete += () => SceneManager.LoadSceneAsync("Scenes/ChapterScene");
+            DOTween.To(() => t, x => t = x, 1, 2).onComplete += () => SceneManager.LoadSceneAsync("Scenes/ChapterScene");
         };
     }
 

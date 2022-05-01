@@ -12,6 +12,11 @@ public class ChapterPanel : MonoBehaviour
     private void Start()
     {
         InitListView();
+        AudioManager.Instance.Play("Theme");
+    }
+    private void OnDestroy()
+    {
+        AudioManager.Instance.Stop("Theme");
     }
 
     public void InitListView()

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ public class ChapterPanelItem : MonoBehaviour
     public Text ProgressPercentText;
     [Header("参数")]
     MissionSO mMissionData;
+    [Header("黑幕")]
+    public CanvasGroup mBlackCurtain;
 
     public void SetData(MissionSO missionData, int index)
     {
@@ -53,6 +56,20 @@ public class ChapterPanelItem : MonoBehaviour
             default:
                 break;
         }
-        SceneManager.LoadSceneAsync(sceneName);
+        StartCoroutine(LoadScene(sceneName));
+    }
+    public IEnumerator LoadScene(string sceneName)
+    {
+        var op = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        op.allowSceneActivation = false;
+        mBlackCurtain.blocksRaycasts = true;
+        mBlackCurtain.DOFade(1, 1);
+        while (op.progress < 0.9f)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(1);
+        op.allowSceneActivation = true;
+
     }
 }

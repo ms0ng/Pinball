@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class ThemePageSceneLoader : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ThemePageSceneLoader : MonoBehaviour
     public string mDefaultScene;
     public DialogData mDialogueData;
 
+    public CanvasGroup mBlackCurtain;
 
     public void OnTapToStartBtnClick(string sceneName)
     {
@@ -28,6 +30,8 @@ public class ThemePageSceneLoader : MonoBehaviour
         }
         if (mTapText) mTapText.text = "载入完成";
         yield return new WaitForSeconds(1);
-        op.allowSceneActivation = true;
+        mBlackCurtain.DOFade(1, 1).onComplete += () => op.allowSceneActivation = true;
+
+
     }
 }
