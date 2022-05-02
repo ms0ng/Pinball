@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue0
   m_EditorClassIdentifier: 
   fieldSprite: {fileID: 21300000, guid: b28a692b361e24f40b8de68caf317fa8, type: 3}
-  music: "\u5BF9\u8BDD1"
+  music: 
   mSpeakerDefine:
   - name: "\u963F\u5C14\u514B"
     shortcut: "\u963F\u5C14\u514B"

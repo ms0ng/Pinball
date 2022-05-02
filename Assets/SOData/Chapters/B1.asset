@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: B1
   m_EditorClassIdentifier: 
   missionName: "\u6218\u6597\u4E4B\u68EE"
-  thumbnailSprite: {fileID: 21300000, guid: 41ab1324780a63b48934b8fcb2346474, type: 3}
+  thumbnailSprite: {fileID: 21300000, guid: 42b8a3109b9cf4e4fb65d25b46f4f5f0, type: 3}
   missionType: 0
   sceneName: B1
   dialogData: {fileID: 0}
