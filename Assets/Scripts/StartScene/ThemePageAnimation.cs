@@ -68,7 +68,7 @@ public class ThemePageAnimation : MonoBehaviour
         seq.onComplete += () =>
         {
             mSceneLoadBtn.interactable = true;
-            AudioManager.Instance.Play("Theme");
+            AudioManager.Instance.Play("Theme", loop: true);
         };
         seq.Play();
 
