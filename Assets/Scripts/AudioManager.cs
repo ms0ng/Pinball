@@ -43,6 +43,7 @@ public class AudioManager : MonoSingleton<AudioManager>
         {
             source = gameObject.AddComponent<AudioSource>();
             source.clip = audioClip;
+            source.volume = 0.15f;
             _AudioSources.Add(name, source);
         }
         source.loop = loop;
