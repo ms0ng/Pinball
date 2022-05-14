@@ -5,29 +5,29 @@ using UnityEngine.UI;
 
 public class AccelerationMove : MonoBehaviour
 {
-    [Header("移动目标")]
+    [Header("移动目标(留空默认本身)")]
     public RectTransform mRectTransform;
     [Header("动画参数")]
     [Tooltip("步进")]
     [Range(0.01f, 0.99f)]
-    public float MoveBackLerpT = 0.5f;
+    public float MoveBackLerpT = 0.8f;
     [Tooltip("速度")]
-    public float MoveBackSpeed = 1;
+    public float MoveBackSpeed = 5;
     [Tooltip("回正死区")]
     public float MoveBackDeadZone = 10;
 
     [Header("移动范围")]
     public float XMulty = 100;
     public float YMulty = 100;
-    public float ZMulty = 100;
+    //public float ZMulty = 100;
 
     [Header("加速度传感器模拟")]
     [Range(-1, 1)]
     public float SimulationX = 0;
     [Range(-1, 1)]
     public float SimulationY = 0;
-    [Range(-1, 1)]
-    public float SimulationZ = 0;
+    //[Range(-1, 1)]
+    //public float SimulationZ = 0;
 
     private Vector2 _target;
     private Vector2 _accelOffset = Vector2.zero;
@@ -45,7 +45,7 @@ public class AccelerationMove : MonoBehaviour
 #if UNITY_EDITOR
         acc = new Vector2(SimulationX, SimulationY);
 #endif
-        _accelOffset = Vector2.Lerp(_accelOffset, acc, Time.deltaTime);
+        _accelOffset = Vector2.Lerp(_accelOffset, acc, Time.deltaTime);//逐渐回正
         _target = acc - _accelOffset;
         _target.x *= XMulty;
         _target.y *= YMulty;
