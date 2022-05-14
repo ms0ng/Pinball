@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace Assets.MyAssets.EventCenter.Example
+namespace MEventCenter.Example
 {
     public class UnityEventHandler : MonoBehaviour
     {

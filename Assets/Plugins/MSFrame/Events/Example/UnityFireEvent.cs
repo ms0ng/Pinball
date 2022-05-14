@@ -4,7 +4,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.MyAssets.EventCenter.Example
+namespace MEventCenter.Example
 {
     public class UnityFireEvent : MonoBehaviour
     {
